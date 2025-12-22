@@ -44,28 +44,28 @@ def chunk_paragraphs(paragraphs: list[str]) -> list[str]:
 
 
 def main() -> None:
-    files = list(INPUT_DIR.glob("*.md"))
+    files = sorted(INPUT_DIR.glob("*.md"))
     if not files:
         raise SystemExit("No files found in knowledge_base/final")
 
+    chunk_id = 0
     total_chunks = 0
 
     with OUTPUT_FILE.open("w", encoding="utf-8") as out:
         for file_path in files:
             text = file_path.read_text(encoding="utf-8", errors="ignore")
-
             paragraphs = split_into_paragraphs(text)
             chunks = chunk_paragraphs(paragraphs)
 
-            for i, chunk in enumerate(chunks):
+            for chunk in chunks:
                 record = {
-                    "chunk_id": f"{file_path.stem}_{i:04d}",
-                    "source_file": file_path.name,
-                    "chunk_index": i,
+                    "id": chunk_id,
                     "word_count": count_words(chunk),
-                    "text": chunk,
+                    "text": chunk
                 }
                 out.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+                chunk_id += 1
                 total_chunks += 1
 
     print("Done.")
