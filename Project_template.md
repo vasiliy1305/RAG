@@ -4,28 +4,6 @@ python -m venv .venv
 source .venv/bin/activate
 pip install langchain faiss-cpu 
 
----
-У меня эмбеддинги нормально скачиваются вроде в РФ
-Делаю через 
-from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-И там при инициализации вписываешь модель, все норм вроде
-
-embeddings = HuggingFaceEmbeddings(
-model_name='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2',
-    model_kwargs={'device': 'cpu'},
-    encode_kwargs={
-        'normalize_embeddings': True,
-        'batch_size': 8
-        },
-    cache_folder='./cache'
-)   
-
-А модель через:
-brew install ollama
-ollama pull llama3:8b
-Скачалось где то за 5 минут
----
-
 # Задание 1. Исследование моделей и инфраструктуры
 
 - кто вам даёт задачу и для кого вы её делаете? 
@@ -213,6 +191,7 @@ daily_update_and_restart.sh - скрипт обновления БД (возмо
 В CRON -->> 0 6 * * * /home/va/projects/sprint7/RAG/scripts/daily_update_and_restart.sh
 
 [Диаграмма PUML](https://github.com/vasiliy1305/RAG/blob/rag/task6_update_flow.puml)
+
 [Диаграмма PNG](https://github.com/vasiliy1305/RAG/blob/rag/img/update_flow.png)
 
 [Пример лога](https://github.com/vasiliy1305/RAG/blob/rag/logs/update.log)
