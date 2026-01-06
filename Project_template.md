@@ -192,3 +192,6 @@ Sources: None.
 (.venv) va@DESKTOP-PSJR2Q3:~/projects/sprint7/RAG$ python scripts/rag_chat.py --once "What is the population of Earth?"
 I don't know based on the provided documents.
 ---
+
+Телеграм БОТ @rag_arin_bot
+скрипт - telegram_bot_yandex.py
