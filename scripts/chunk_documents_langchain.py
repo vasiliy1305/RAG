@@ -8,7 +8,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_DIR = ROOT / "knowledge_base" / "final"
-OUTPUT_FILE = ROOT / "knowledge_base" / "chunks.jsonl"
+OUTPUT_FILE = ROOT / "knowledge_base" / "chunks.json"
 
 # Target: ~100–300 words ≈ 600–1800 chars (very rough).
 # We'll chunk by characters (common approach), then you can report avg word count.

@@ -23,7 +23,7 @@ def main() -> None:
                 word_counts.append(wc)
 
     if not word_counts:
-        raise SystemExit("No chunks found in chunks.jsonl")
+        raise SystemExit("No chunks found in chunks.json")
 
     print("Chunk statistics (words):")
     print(f"Total chunks: {len(word_counts)}")

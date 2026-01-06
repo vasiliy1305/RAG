@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 INPUT_DIR = ROOT / "knowledge_base" / "final"
-OUTPUT_FILE = ROOT / "knowledge_base" / "chunks.jsonl"
+OUTPUT_FILE = ROOT / "knowledge_base" / "chunks.json"
 
 MIN_WORDS = 150
 MAX_WORDS = 250

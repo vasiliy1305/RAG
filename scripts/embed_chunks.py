@@ -18,7 +18,7 @@ DEVICE = "cpu"  # force CPU to avoid CUDA warnings
 
 
 def load_chunks(path: Path) -> list[dict]:
-    """Load chunks.jsonl and return records sorted by integer id."""
+    """Load chunks.json and return records sorted by integer id."""
     chunks: list[dict] = []
     with path.open("r", encoding="utf-8") as f:
         for line in f:
@@ -40,7 +40,7 @@ def main() -> None:
 
     chunks = load_chunks(CHUNKS_FILE)
     if not chunks:
-        raise SystemExit("No chunks loaded from chunks.jsonl")
+        raise SystemExit("No chunks loaded from chunks.json")
 
     texts = [c["text"] for c in chunks]
 

@@ -113,7 +113,7 @@ terms_map.json со словарём замен (исходное → вымыш
 # Задание 3. Создание векторного индекса базы знаний
 
 в качестве чанков выбераем обзац (при первом просмотре они не сильно большие и содержат логически завершенные данные)
-сохраняем в chunks.jsonl
+сохраняем в chunks.json
 анализируем чанки макс мин средняя длинна чанков
 Chunk statistics (words):
 Total chunks: 317
@@ -205,3 +205,10 @@ I don't know based on the provided documents.
 [С слоями защиты](https://github.com/vasiliy1305/RAG/blob/rag/img/pass2.png)
 
 ---
+
+# task 6
+
+daily_update_and_restart.sh - скрипт обновления БД (возможно на будующее перезагрузки ТГ)
+
+В CRON -->> 0 6 * * * /home/va/projects/sprint7/RAG/scripts/daily_update_and_restart.sh
+

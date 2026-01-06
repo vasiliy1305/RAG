@@ -14,7 +14,7 @@ from sentence_transformers import SentenceTransformer
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.jsonl"
+CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.json"
 INDEX_FILE = ROOT / "knowledge_base" / "faiss.index"
 
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
