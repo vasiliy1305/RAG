@@ -199,8 +199,9 @@ I don't know based on the provided documents.
 ---
 
 # Task 5
-Без слоев защиты
-[]()
 
-С слоями защиты
-[]()
+[Без слоев защиты](https://github.com/vasiliy1305/RAG/blob/rag/img/pass1.png)
+
+[С слоями защиты](https://github.com/vasiliy1305/RAG/blob/rag/img/pass2.png)
+
+---
