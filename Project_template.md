@@ -158,7 +158,37 @@ Top-5:
 
    не потянул комп (wsl ноут)
 
+    перехожу на YandexGPT
+
+
    python scripts/rag_chat.py
 
+Примеры успешных ответов
+---
+python scripts/rag_chat.py --once "what is a soulanchor"
+A soulanchor is an object, which can be either inanimate or living, in which a person has concealed a part of their soul using voidal aether. This is done to protect the fragment of soul from anything that might happen to the body, ensuring the person's continued existence even if their body is damaged or destroyed.
 
+Sources:
+1. [id=221]
+2. [id=233]
+---
+(.venv) va@DESKTOP-PSJR2Q3:~/projects/sprint7/RAG$ python scripts/rag_chat.py --once "Who is Arin Valcor?"
+Arin Valcor is the Boy Who Lived, the Chosen One, and the hero of the aetherial world. He is known for facing and defeating Velgor. Arin grew up with baselines and attended auralis, where he faced many dangers and terrors. Along with his friends, he destroyed Velgor's soulanchors and ultimately defeated him in a climactic battle.
 
+Sources:
+1. [id=165]
+2. [id=182]
+---
+(.venv) va@DESKTOP-PSJR2Q3:~/projects/sprint7/RAG$ python scripts/rag_chat.py --once "What is the Aether Authority?"
+The Aether Authority is an organization with headquarters located in the heart of Centralis. The structure is entirely underground, and it features a unique entrance through a broken-down red telephone box on a dingy street. Visitors must dial a specific number and state their business to gain entry.
+---
+Примеры НЕ успешных ответов
+---
+(.venv) va@DESKTOP-PSJR2Q3:~/projects/sprint7/RAG$ python scripts/rag_chat.py --once "Who founded the Crimson Empire?"
+I don't know based on the provided documents.
+
+Sources: None.
+---
+(.venv) va@DESKTOP-PSJR2Q3:~/projects/sprint7/RAG$ python scripts/rag_chat.py --once "What is the population of Earth?"
+I don't know based on the provided documents.
+---
