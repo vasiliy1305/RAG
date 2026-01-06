@@ -6,7 +6,7 @@ from statistics import mean
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.jsonl"
+CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.json"
 
 
 def main() -> None:

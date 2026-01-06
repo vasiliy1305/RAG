@@ -196,3 +196,11 @@ I don't know based on the provided documents.
 Телеграм БОТ @rag_arin_bot
 скрипт - telegram_bot_yandex.py
 скрин [скрин](https://github.com/vasiliy1305/RAG/blob/rag/img/TG_Screen.png)
+---
+
+# Task 5
+Без слоев защиты
+[]()
+
+С слоями защиты
+[]()

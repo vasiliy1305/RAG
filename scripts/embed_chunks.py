@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.jsonl"
+CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.json"
 OUT_EMB = ROOT / "knowledge_base" / "embeddings.npy"
 OUT_META = ROOT / "knowledge_base" / "embeddings_meta.json"
 
