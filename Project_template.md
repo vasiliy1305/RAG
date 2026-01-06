@@ -212,3 +212,6 @@ daily_update_and_restart.sh - скрипт обновления БД (возмо
 
 В CRON -->> 0 6 * * * /home/va/projects/sprint7/RAG/scripts/daily_update_and_restart.sh
 
+[Диаграмма](https://github.com/vasiliy1305/RAG/blob/rag/task6_update_flow.puml)
+
+[Пример лога](https://github.com/vasiliy1305/RAG/blob/rag/logs/update.log)
