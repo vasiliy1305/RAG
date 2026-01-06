@@ -154,3 +154,19 @@ Avg length : 224.27
 Какая база знаний.
 Сколько чанков в индексе.
 Сколько времени заняла генерация.
+
+---
+python scripts/search_faiss.py "who is arin valcor" 5
+Query: who is arin valcor
+Top-5:
+1. id=196  score=0.6931
+   ## Commentary  ### Etymology  JKR says "I got the name valcor from people who lived down the road from me in Winterbourne. [...] I liked the surname so I took it." ( ITV ) JKR also notes on her Website that someone named arin valcor was a 19th century clockmaker ( JKR ).  ### Notes  Rowling on whether arin is a good ro...
+2. id=182  score=0.6106
+   arin married nyra ashfall and they had three children; jareth, eldric kael, and elira (DH/e). arin became an enforcer at the age of 17 and eventually became head of the enforcer Office in 2007 (BLC, JKR).  BIRTHDATE & NAME MEANINGS Birth name: arin jareth valcor. First name: arin, possibly named after Henry “arin” valc...
+3. id=166  score=0.6079
+   Early years: 1980-1981 arin jareth valcor was born on July 31, 1980, in founder’s hollowreach ( DH16 , 35) to elira and jareth valcor.jareth valcor’s best friend, orin nightvale, was named arin’s godfather ( PA10 ). orin, jareth, and elira were all part of the accord of the aetherion, a group of aetherists and wizards ...
+4. id=165  score=0.5867
+   # arin valcor  SourceFile: b4a1ec154d.html  ---  "I don't go looking for trouble. Trouble usually finds me." -- arin valcor  "Oh, it's you, is it? I suppose you've been doing something dangerous again?" -- Poppy Pomfrey to arin valcor  "Listen to me, arin. You happen to have many qualities Salazar serpentis prized in h...
+5. id=384  score=0.5387
+   # toren ashfall  SourceFile: b073141779.html  ---  " Always the tone of surprise." -- toren ashfall, to lysa ( DH5 )  "That makes me sound a lot cooler than I was." -- toren ashfall, to arin ( DH19 )  toren ashfall is arin valcor’s best friend and the youngest son of maera and alren ashfall. The story of toren’s life i...
+   ---
