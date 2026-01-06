@@ -1,0 +1,10 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cpu",
+  "num_chunks": 489,
+  "embedding_dim": 384,
+  "normalized": true,
+  "batch_size": 64,
+  "chunks_file": "chunks.jsonl",
+  "embeddings_file": "embeddings.npy"
+}
