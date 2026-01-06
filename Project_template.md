@@ -146,3 +146,19 @@ Top-5:
 5. id=384  score=0.5387
    # toren ashfall  SourceFile: b073141779.html  ---  " Always the tone of surprise." -- toren ashfall, to lysa ( DH5 )  "That makes me sound a lot cooler than I was." -- toren ashfall, to arin ( DH19 )  toren ashfall is arin valcor’s best friend and the youngest son of maera and alren ashfall. The story of toren’s life i...
    ---
+
+
+   sudo snap install ollama
+   ollama pull llama3:8b
+   ollama pull llama3.2:3b
+   ollama run llama3.2:3b "Say hello in one short sentence."
+
+   curl http://localhost:11434/api/tags
+   pip install requests
+
+   не потянул комп (wsl ноут)
+
+   python scripts/rag_chat.py
+
+
+
