@@ -198,6 +198,7 @@ daily_update_and_restart.sh - скрипт обновления БД (возмо
 
 # task 7
 
-[Golden Set]()
+[Golden Set](https://github.com/vasiliy1305/RAG/blob/rag/golden_questions.txt)
 
-[Golden Set Log]()
+[Golden Set Log](https://github.com/vasiliy1305/RAG/blob/rag/logs/rag_golden_run.jsonl)
+
