@@ -202,3 +202,14 @@ daily_update_and_restart.sh - скрипт обновления БД (возмо
 
 [Golden Set Log](https://github.com/vasiliy1305/RAG/blob/rag/logs/rag_golden_run.jsonl)
 
+Общая точность: 15/20 = 75%
+По классам
+[K] Known: 14 вопросов
+верно: 11/14 = 78.6%
+неверно: 3/14 = 21.4% (11,12,14)
+
+[M] Missing: 6 вопросов
+верно: 4/6 = 66.7%
+неверно: 2/6 = 33.3% (16,19)
+
+
