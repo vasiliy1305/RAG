@@ -195,3 +195,9 @@ daily_update_and_restart.sh - скрипт обновления БД (возмо
 [Диаграмма PNG](https://github.com/vasiliy1305/RAG/blob/rag/img/update_flow.png)
 
 [Пример лога](https://github.com/vasiliy1305/RAG/blob/rag/logs/update.log)
+
+# task 7
+
+[Golden Set]()
+
+[Golden Set Log]()

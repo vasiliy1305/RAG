@@ -7,6 +7,8 @@ import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from query_logger import log_query_jsonl
+
 
 import faiss
 import numpy as np
@@ -23,6 +25,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 ROOT = Path(__file__).resolve().parents[1]
 CHUNKS_FILE = ROOT / "knowledge_base" / "chunks.json"
 INDEX_FILE = ROOT / "knowledge_base" / "faiss.index"
+QUERY_LOG_FILE = ROOT / "logs" / "queries.jsonl"
+
 
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
@@ -437,6 +441,7 @@ async def health(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(("OK\n" if ok else "NOT OK\n") + "\n".join(lines))
 
 
+
 async def on_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     global ragbot
     q = (update.message.text or "").strip()
@@ -446,33 +451,108 @@ async def on_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
     await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
 
     loop = asyncio.get_running_loop()
-    try:
-        ans = await loop.run_in_executor(None, ragbot.answer, q)
-    except Exception as e:
-        ans = f"Error: {type(e).__name__}: {e}"
 
-    # IMPORTANT:
-    # We keep ParseMode.HTML because we intentionally add <pre> debug blocks.
-    # To avoid Telegram HTML parsing errors caused by model output, we escape ONLY the model part.
-    #
-    # Our RagBot.answer already returns safe <pre> blocks (escaped),
-    # but the model-generated main text may contain raw "<...>".
-    #
-    # Strategy:
-    # - Split by our debug block marker "<pre>" to escape only the non-debug prefix.
-    # - If debug is disabled, escape whole answer for HTML safety.
-    if "<pre>" in ans:
-        prefix, rest = ans.split("<pre>", 1)
+    meta = {
+        "chunks_found": False,
+        "sources_used": [],
+        "sources_retrieved": [],
+        "filtered": [],
+        "error": None,
+    }
+
+    try:
+        # 1) Retrieve here (so we can log sources even if LLM fails)
+        retrieved = retrieve(q, ragbot.embedder, ragbot.index, ragbot.chunks_by_id, top_k=TOP_K)
+        safe_chunks, filtered_chunks = apply_retrieval_guards(retrieved)
+
+        meta["chunks_found"] = len(safe_chunks) > 0
+        meta["sources_retrieved"] = [
+            {"id": c.id, "score": c.score, "source": c.source} for c in retrieved
+        ]
+        meta["sources_used"] = [
+            {"id": c.id, "score": c.score, "source": c.source} for c in safe_chunks
+        ]
+        meta["filtered"] = [
+            {"id": c.id, "reason": c.filter_reason, "score": c.score, "source": c.source}
+            for c in filtered_chunks
+        ]
+
+        docs = format_context(safe_chunks)
+        if not docs.strip():
+            ans_raw = "I don't know based on the provided documents."
+        else:
+            prompt = build_prompt(q, docs)
+            # LLM call in executor (blocking)
+            ans_raw = await loop.run_in_executor(None, yandex_generate, prompt)
+
+            # Post-check (same logic as in RagBot.answer)
+            if RAG_GUARD_POSTCHECK and violates_output_policy(ans_raw):
+                ans_raw = "I don't know based on the provided documents."
+
+    except Exception as e:
+        ans_raw = f"Error: {type(e).__name__}: {e}"
+        meta["error"] = f"{type(e).__name__}: {e}"
+
+    # --- LOGGING (JSONL) ---
+    # success heuristic: chunks_found AND not "I don't know" AND no error
+    success = bool(meta["chunks_found"]) and ("I don't know based on the provided documents." not in ans_raw) and not meta["error"]
+
+    try:
+        log_query_jsonl(
+            QUERY_LOG_FILE,
+            question=q,
+            chunks_found=bool(meta["chunks_found"]),
+            answer=ans_raw,
+            success=success,
+            sources_used=[x["id"] for x in meta["sources_used"]],
+            sources_retrieved=[x["id"] for x in meta["sources_retrieved"]],
+            filtered=meta["filtered"],
+            extra={
+                "top_k": TOP_K,
+                "min_score": MIN_SCORE,
+                "guards": {
+                    "preprompt": RAG_GUARD_PREPROMPT,
+                    "filter_chunks": RAG_GUARD_FILTER_CHUNKS,
+                    "sanitize_chunks": RAG_GUARD_SANITIZE_CHUNKS,
+                    "postcheck": RAG_GUARD_POSTCHECK,
+                },
+                "error": meta["error"],
+            },
+        )
+    except Exception:
+        # logging must never crash the bot
+        pass
+
+    # --- Optional: add debug footer (already safe for HTML via make_debug_pre) ---
+    ans_for_telegram = ans_raw
+    if RAG_GUARD_DEBUG:
+        ans_for_telegram += make_debug_pre(
+            {
+                "debug": "log_meta",
+                "chunks_found": meta["chunks_found"],
+                "sources_used": meta["sources_used"][:TOP_K],
+                "filtered": meta["filtered"][:TOP_K],
+                "error": meta["error"],
+            }
+        )
+
+    # --- HTML escaping for Telegram ---
+    if "<pre>" in ans_for_telegram:
+        prefix, rest = ans_for_telegram.split("<pre>", 1)
         prefix = html.escape(prefix)
-        ans = prefix + "<pre>" + rest  # rest already escaped inside <pre> by make_debug_pre()
+        ans_for_telegram = prefix + "<pre>" + rest
     else:
-        ans = html.escape(ans)
+        ans_for_telegram = html.escape(ans_for_telegram)
 
     # Telegram message length safety
-    if len(ans) > 3500:
-        ans = ans[:3500] + "\n...\n(truncated)"
+    if len(ans_for_telegram) > 3500:
+        ans_for_telegram = ans_for_telegram[:3500] + "\n...\n(truncated)"
 
-    await update.message.reply_text(ans, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+    await update.message.reply_text(
+        ans_for_telegram,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
 
 
 def main() -> None:
