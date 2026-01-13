@@ -1,0 +1,8 @@
+knowledge_base/embeddings.npy
+
+# Python virtual environments
+.venv/
+venv/
+env/
+source/
+

@@ -1,0 +1,968 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+                    Gringotts Wizarding Bank &#8211; Harry Potter Lexicon
+            </title>
+        <link href="https://fonts.googleapis.com/css?family=Lusitana:400,700|IM+Fell+English" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/style.css?v=335837b" rel="stylesheet" type="text/css" media="screen" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/css/jquery.tipsy.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/css/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/weather-icons/css/weather-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.hp-lexicon.org/wp-content/themes/lexicon/weather-icons/css/weather-icons-wind.min.css" rel="stylesheet" type="text/css" />
+    <link rel="pingback" href="https://www.hp-lexicon.org/xmlrpc.php" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="The Harry Potter Lexicon"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://www.hp-lexicon.org/wp-content/themes/lexicon/images/favicon/mstile-310x310.png" />
+
+
+    
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Gringotts Wizarding Bank &#8211; Harry Potter Lexicon" />
+	<meta property="og:description" content="Gringotts Wizarding Bank is a goblin-run bank that does business worldwide but is headquartered in Diagon Alley. Introduction Part way down Diagon Alley, near its intersection with Knockturn Alley, stands an imposing snow-white marble building: Gringotts Wizarding Bank (CS4). &#8220;Towering over the other shops&#8221; (DH26), it is the place where British witches and wizards store [&hellip;]" />
+	<meta property="og:url" content="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/" />
+	<meta property="og:site_name" content="Harry Potter Lexicon" />
+	<meta property="article:modified_time" content="2021-08-15T20:21:55+00:00" />
+	<meta property="og:image" content="https://www.hp-lexicon.org/wp-content/uploads/2016/05/gringott_s_by_facegrater-d8jpcwj.jpg" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="706" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@Lexicon_Steve" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="8 minutes" />
+	<meta name="twitter:label2" content="Written by" />
+	<meta name="twitter:data2" content="Steve VanderArk" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/","url":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/","name":"Gringotts Wizarding Bank &#8211; Harry Potter Lexicon","isPartOf":{"@id":"https://www.hp-lexicon.org/#website"},"primaryImageOfPage":{"@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/#primaryimage"},"image":{"@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/#primaryimage"},"thumbnailUrl":"https://www.hp-lexicon.org/wp-content/uploads/2016/05/gringott_s_by_facegrater-d8jpcwj.jpg","datePublished":"2014-06-28T21:49:56+00:00","dateModified":"2021-08-15T20:21:55+00:00","breadcrumb":{"@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/#primaryimage","url":"https://www.hp-lexicon.org/wp-content/uploads/2016/05/gringott_s_by_facegrater-d8jpcwj.jpg","contentUrl":"https://www.hp-lexicon.org/wp-content/uploads/2016/05/gringott_s_by_facegrater-d8jpcwj.jpg","width":1024,"height":706,"caption":"Gringotts Bank in Diagon Alley."},{"@type":"BreadcrumbList","@id":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hp-lexicon.org/"},{"@type":"ListItem","position":2,"name":"Places","item":"https://www.hp-lexicon.org/place/"},{"@type":"ListItem","position":3,"name":"United Kingdom","item":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/"},{"@type":"ListItem","position":4,"name":"England","item":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/"},{"@type":"ListItem","position":5,"name":"London","item":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/"},{"@type":"ListItem","position":6,"name":"Diagon Alley","item":"https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/"},{"@type":"ListItem","position":7,"name":"Gringotts Wizarding Bank"}]},{"@type":"WebSite","@id":"https://www.hp-lexicon.org/#website","url":"https://www.hp-lexicon.org/","name":"Harry Potter Lexicon","description":"The most compleat and amazing reference to the world of Harry Potter","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.hp-lexicon.org/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hp-lexicon.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=e9e33c406f67c32c6146ad9c581085b4"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='mci-footnotes-jquery-tooltips-pagelayout-none-css' href='https://www.hp-lexicon.org/wp-content/plugins/footnotes/css/footnotes-jqttbrpl0.min.css?ver=2.7.3' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.hp-lexicon.org/wp-includes/css/dist/block-library/style.min.css?ver=e9e33c406f67c32c6146ad9c581085b4' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='co-authors-plus-coauthors-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-coauthors.is-layout-flow [class*=wp-block-co-authors-plus]{display:inline}
+
+</style>
+<style id='co-authors-plus-avatar-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-avatar :where(img){height:auto;max-width:100%;vertical-align:bottom}.wp-block-co-authors-plus-coauthors.is-layout-flow .wp-block-co-authors-plus-avatar :where(img){vertical-align:middle}.wp-block-co-authors-plus-avatar:is(.alignleft,.alignright){display:table}.wp-block-co-authors-plus-avatar.aligncenter{display:table;margin-inline:auto}
+
+</style>
+<style id='co-authors-plus-image-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-image{margin-bottom:0}.wp-block-co-authors-plus-image :where(img){height:auto;max-width:100%;vertical-align:bottom}.wp-block-co-authors-plus-coauthors.is-layout-flow .wp-block-co-authors-plus-image :where(img){vertical-align:middle}.wp-block-co-authors-plus-image:is(.alignfull,.alignwide) :where(img){width:100%}.wp-block-co-authors-plus-image:is(.alignleft,.alignright){display:table}.wp-block-co-authors-plus-image.aligncenter{display:table;margin-inline:auto}
+
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://www.hp-lexicon.org/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.hp-lexicon.org/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=e9e33c406f67c32c6146ad9c581085b4' type='text/css' media='all' />
+<style id='powerpress-player-block-style-inline-css' type='text/css'>
+
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ce_responsive-css' href='https://www.hp-lexicon.org/wp-content/plugins/simple-embed-code/css/video-container.min.css?ver=2.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://www.hp-lexicon.org/wp-content/plugins/jetpack/css/jetpack.css?ver=12.9.4' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-content/plugins/footnotes/js/jquery.tools.min.js?ver=1.2.7.redacted.2" id="mci-footnotes-jquery-tools-js"></script>
+<link rel="https://api.w.org/" href="https://www.hp-lexicon.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hp-lexicon.org/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://www.hp-lexicon.org/?p=2534' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.hp-lexicon.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hp-lexicon.org%2Fplace%2Fgreat-britain-united-kingdom%2Fengland%2Flondon%2Fdiagon-alley%2Fgringotts-wizarding-bank%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.hp-lexicon.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hp-lexicon.org%2Fplace%2Fgreat-britain-united-kingdom%2Fengland%2Flondon%2Fdiagon-alley%2Fgringotts-wizarding-bank%2F&#038;format=xml" />
+            <script type="text/javascript"><!--
+                                function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+                //-->
+
+                // tabnab protection
+                window.addEventListener('load', function () {
+                    // make all links have rel="noopener noreferrer"
+                    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                        link.setAttribute('rel', 'noopener noreferrer');
+                    });
+                });
+            </script>
+            	<style>img#wpstats{display:none}</style>
+		
+<style type="text/css" media="all">
+.footnotes_reference_container {margin-top: 24px !important; margin-bottom: 0px !important;}
+.footnote_container_prepare > p {border-bottom: 1px solid #aaaaaa !important;}
+.footnote_tooltip { font-size: 13px !important; background-color: #fff7a7 !important; border-width: 1px !important; border-style: solid !important; border-color: #cccc99 !important; border-radius: 3px !important; -webkit-box-shadow: 2px 2px 11px #666666; -moz-box-shadow: 2px 2px 11px #666666; box-shadow: 2px 2px 11px #666666;}
+
+
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC7D7NK');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body class="wp-singular place-template-default single single-place postid-2534 wp-theme-lexicon" data-template="base.twig">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7D7NK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div id="share">
+		<a href="#" class="share only_login save" title="Save to your notebook"><i class="fa fa-heart"></i></a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hp-lexicon.org%2Fplace%2Fgreat-britain-united-kingdom%2Fengland%2Flondon%2Fdiagon-alley%2Fgringotts-wizarding-bank%2F" class="fb share" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/intent/tweet?url=https://www.hp-lexicon.org/?p=2534&amp;text=Gringotts%20Wizarding%20Bank&amp;via=Lexicon_Steve" class="twitter share" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-twitter"></i></a>
+			<a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.hp-lexicon.org%2Fplace%2Fgreat-britain-united-kingdom%2Fengland%2Flondon%2Fdiagon-alley%2Fgringotts-wizarding-bank%2F&amp;media=https%3A%2F%2Fwww.hp-lexicon.org%2Fwp-content%2Fuploads%2F2016%2F05%2Fgringott_s_by_facegrater-d8jpcwj.jpg&amp;description=Gringotts%20Wizarding%20Bank" class="pinterest share" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-pinterest-p"></i></a>
+		</div>
+
+<article class="place post-type-place entry" id="place-2534" itemtype="http://schema.org/Place" itemscope>
+
+	<header class="header" >
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="navbar-brand" href="https://www.hp-lexicon.org" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The <em>Harry Potter</em> Lexicon <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">Home</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/category/podcasts/podcast/">Lexicon Podcast</a></li>
+                        <li><a href="/category/podcasts/harry-potter-minute/">Harry Potter Minute</a></li>
+                                                <li><a href="/category/essays/">Essays</a></li>
+                                                <li><a href="/sources-used-by-the-lexicon/">Sources</a></li>
+                                                                        <li role="separator" class="divider"></li>
+                        <li><a href="/support-the-lexicon/">Support the Lexicon</a></li>
+                        <li><a href="/feedback/">Feedback</a></li>
+                        <li><a href="/about-the-lexicon/">About the Lexicon</a></li>
+                                                <li><a href="/credits/">Credits</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                                                <li><a href="/terms-of-service/">Terms of Use</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="/characters/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Characters</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/characters/#notable_characters">Notable Characters</a></li>
+                        <li><a href="/characters/#index_of_characters">Index of Characters</a></li>
+                        <li><a href="/characters/#character_timelines">Character Timelines</a></li>
+                        <li><a href="/characters/#families">Families</a></li>
+                        <li class="hidden-xs"><a href="/characters/#essays">Essays</a></li>
+                        <li class="hidden-xs"><a href="/characters/#groups_and_related_resources">Groups and Related Resources</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/characters/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/places/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Places</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/places/#notable_locations">Notable Locations</a></li>
+                        <li><a href="/places/#gazetteer_of_the_wizarding_world">Gazetteer of the Wizarding World</a></li>
+                        <li><a href="/places/#atlas_of_the_wizarding_world">Atlas of the Wizarding World</a></li>
+                        <li><a href="/places/#types_of_places">Types of Places</a></li>
+                        <li class="hidden-xs"><a href="/places/#essays_exploring_the_wizarding_world">Essays exploring the Wizarding World</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/places/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/spells-and-potions/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Magic</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/spells-and-potions/#spells">Spells</a></li>
+                        <li><a href="/spells-and-potions/#potions">Potions</a></li>
+                        <li><a href="/spells-and-potions/#magical_items_devices">Magical Items & Devices</a></li>
+                        <li><a href="/spells-and-potions/#magical_and_mundane_plants">Magical and Mundane Plants</a></li>
+                        <li class="hidden-xs"><a href="/spells-and-potions/#magical_theory_essays_about_magic">Magical Theory &amp; Essays about Magic</a></li>
+                        <li class="hidden-xs"><a href="/spells-and-potions/#miscellaneous_magic">Miscellaneous Magic</a></li>
+                        <li class="hidden-xs"><a href="/spells-and-potions/#fields_of_magical_study">Fields of Magical Study</a></li>
+                        <li class="hidden-xs"><a href="/spells-and-potions/#quotes_from_jk_rowling">Quotes from J.K. Rowling</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/spells-and-potions/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/event/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/events-and-timelines/#timeline_of_major_events">Timeline of Major Events</a></li>
+                        <li><a href="/events-and-timelines/#detailed_timelines_for_each_era">Detailed Timelines for Each Era</a></li>
+                        <li><a href="/events-and-timelines/#character_timelines">Character Timelines</a></li>
+                        <li><a href="/events-and-timelines/#specialized_timelines">Specialized Timelines</a></li>
+                        <li class="hidden-xs"><a href="/events-and-timelines/#additional_resources">Additional resources</a></li>
+                        <li class="hidden-xs"><a href="/events-and-timelines/#day-by-day_calendars_of_the_stories">Day-by-Day Calendars of the Stories</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/events-and-timelines/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/things/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Things</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/things/#explore_the_wizarding_world">Explore the Wizarding World</a></li>
+                        <li><a href="/things/#topics_of_interest">Topics of Interest</a></li>
+                        <li><a href="/things/#quotes_from_rowling">Quotes from Rowling</a></li>
+                        <li><a href="/things/#essays">Essays</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/currency/exchange">Currency Converter</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/things/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/creatures-bestiary/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Creatures</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/creatures-bestiary/#well-known_creatures">Well-Known Creatures</a></li>
+                        <li><a href="/creatures-bestiary/#bestiary">Bestiary</a></li>
+                        <li><a href="/creatures-bestiary/#types_of_creatures">Types of Creatures</a></li>
+                        <li><a href="/creatures-bestiary/#characters_who_are_creatures">Characters who are Creatures</a></li>
+                        <li class="hidden-xs"><a href="/creatures-bestiary/#miscellaneous">Miscellaneous</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/creatures-bestiary/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/source/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/canon/#the_harry_potter_novels">The Harry Potter novels</a></li>
+                        <li><a href="/canon/#secondary_canon">Other writings by Rowling</a></li>
+                        <li><a href="/canon/#other_sources_considered_to_be_canon">Other sources considered to be canon</a></li>
+                        <li><a href="/canon/#all_sources_used_in_the_lexicon">All Sources used in the Lexicon</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/canon/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/category/essays/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Essays</a>
+                    <ul class="dropdown-menu">
+                                                            <li><a href="https://www.hp-lexicon.org/2017/04/10/death-eaters-guide/">The Death Eaters: A Guide To Who Was Where</a></li>
+                                            <li><a href="https://www.hp-lexicon.org/2016/12/29/famous-wizard-cards/">Famous Wizard Cards</a></li>
+                                            <li><a href="https://www.hp-lexicon.org/2016/08/10/albus-potter-lesson-quantum-mechanics/">Albus Potter and the lesson in Quantum Mechanics</a></li>
+                                                            <li role="separator" class="divider"></li>
+                        <li><a href="/category/essays/">more</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/lists/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lists</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/list/magical-people/">Magical People</a></li>
+                        <li><a href="/list/schools/">Schools</a></li>
+                        <li><a href="/list/quidditch/">Quidditch</a></li>
+                        <li><a href="/list/books/">Books</a></li>
+                        <li class="hidden-xs"><a href="/list/dark-magic-rise-evil/">Rise of Evil</a></li>
+                        <li class="hidden-xs"><a href="/list/government/">Government</a></li>
+                        <li class="hidden-xs"><a href="/list/wizarding-atlas/">Wizarding Atlas</a></li>
+                        <li class="hidden-xs"><a href="/list/the-wizarding-world/">The Wizarding World</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/lists/">more</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search" action="/search-google/" method="get">
+                <div class="form-group">
+                    <input type="text" placeholder="Search ...." value="" name="q" id="search_que" class="form-control input-sm" autocomplete="off"/>
+                    <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</nav>
+				
+			<div class="big_title">
+				<div class="container">
+					<div class="row title">
+	<div class="col-md-12">
+		<span class="cat">
+												<a href="https://www.hp-lexicon.org/placetype/businesses/">Businesses, merchants, and shops</a>									</span>
+		<div class="icons alignright">
+							<a href="https://www.hp-lexicon.org/icon/buildings/" title="Buildings"><img src="https://www.hp-lexicon.org/wp-content/uploads/2015/07/buildings-and-architecture-42x42.png" alt="Buildings" title="Buildings" border="0" /></a>							<a href="https://www.hp-lexicon.org/icon/creatures/" title="Creatures"><img src="https://www.hp-lexicon.org/wp-content/uploads/2015/10/creatures-42x42.png" alt="Creatures" title="Creatures" border="0" /></a>							<a href="https://www.hp-lexicon.org/icon/places/" title="Places"><img src="https://www.hp-lexicon.org/wp-content/uploads/2016/10/atlas-and-places-42x42.png" alt="Places" title="Places" border="0" /></a>							<a href="https://www.hp-lexicon.org/icon/shops-merchants/" title="Shops and merchants"><img src="https://www.hp-lexicon.org/wp-content/uploads/2015/07/merchants-42x42.png" alt="Shops and merchants" title="Shops and merchants" border="0" /></a>							<a href="https://www.hp-lexicon.org/icon/wizarding-culture/" title="Wizarding Culture"><img src="https://www.hp-lexicon.org/wp-content/uploads/2016/05/wizardingworld-42x42.png" alt="Wizarding Culture" title="Wizarding Culture" border="0" /></a>					</div>
+		<h1>Gringotts Wizarding Bank</h1>
+	</div>
+</div>
+				</div>
+			</div>
+		
+
+				    <div class="breadcrumbs">
+    <div class="container">
+        <nav id="breadcrumbs" class="main-breadcrumbs"><span><span><a href="https://www.hp-lexicon.org/">Home</a></span> <span class="sep"></span> <span><a href="https://www.hp-lexicon.org/place/">Places</a></span> <span class="sep"></span> <span><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/">United Kingdom</a></span> <span class="sep"></span> <span><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/">England</a></span> <span class="sep"></span> <span><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/">London</a></span> <span class="sep"></span> <span><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/">Diagon Alley</a></span> <span class="sep"></span> <span class="breadcrumb_last" aria-current="page">Gringotts Wizarding Bank</span></span></nav>
+    </div>
+</div>
+		
+			
+	</header>
+
+	<section id="content" role="main" class="content-wrapper container">
+				<div class="row">
+			<div class="col-md-12">
+						<section class="article-content content">
+			<div class="article-body">
+
+				
+															<div class="quote">
+							<p>"Gringotts is the safest place in the world fer anything yeh want ter keep safe -- 'cept maybe Hogwarts."<br />
+--  Rubeus Hagrid (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>)</p>
+
+													</div>
+									
+				<div class="row">
+				    <div class="col-md-8">
+				        				            				                <a href="https://www.hp-lexicon.org/?attachment_id=21716" class="featured_image"><img src="https://www.hp-lexicon.org/wp-content/uploads/2016/05/gringott_s_by_facegrater-d8jpcwj-200x0-c-default.jpg" itemprop="image" alt="Gringotts Wizarding Bank" title="Gringotts Wizarding Bank" class="alignleft" /></a>
+				            				        
+				        <p>Gringotts Wizarding Bank is a goblin-run bank that does business worldwide but is headquartered in Diagon Alley.</p>
+<h2><span id="introduction">Introduction</span></h2>
+<p>Part way down Diagon Alley, near its intersection with Knockturn Alley, stands an imposing snow-white marble building: Gringotts Wizarding Bank (<a href="/source/the-harry-potter-novels/cs/cs4">CS4</a>). &#8220;Towering over the other shops&#8221; (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>), it is the place where British witches and wizards store their money and other valuables, in vaults miles below ground. The vaults are heavily guarded &#8211; as Hagrid says, &#8220;yeh&#8217;d be mad teh try an&#8217; rob it&#8221; (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</p>
+<p>The centuries-old bank is run by goblins, and they alone know the secrets of the twisting underground passages and the enchantments (and creatures!) in place to defend against intruders (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>). The goblins have a code that forbids them to speak of the bank&#8217;s secrets, and would consider it &#8220;base treachery&#8221; to break any part of that code (<a href="/source/the-harry-potter-novels/dh/dh24">DH24</a>, <a href="/source/the-harry-potter-novels/dh/dh25">DH25</a>).</p>
+<p>There was a rumor that Cornelius Fudge was trying to take over Gringotts when he was Minister for Magic; however, as it was published in the Quibbler, it was likely unsubstantiated (<a href="/source/the-harry-potter-novels/op/op10">OP10</a>).</p>
+<h2><span id="entrance_main_hall">Entrance &amp; Main Hall</span></h2>
+<p>From Diagon Alley, a set of white stairs (<a href="/source/the-harry-potter-novels/cs/cs4">CS4</a>) leads up to a set of burnished bronze doors. The doors are flanked by a goblin in a uniform of scarlet and gold (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>), though during war time the goblin was replaced instead by two wizards with Probity Probes (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>). This is the entrance to Gringotts, and it leads into a small entrance hall and another set of doors. Engraved on these silver doors are the words:</p>
+<p style="text-align: left; padding-left: 30px;">Enter, stranger, but take heed<br />
+Of what awaits the sin of greed,<br />
+For those who take, but do not earn,<br />
+Must pay most dearly in their turn.<br />
+So if you seek beneath our floors<br />
+A treasure that was never yours,<br />
+Thief, you have been warned, beware<br />
+Of finding more than treasure there. (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>)</p>
+<p>Though these doors &#8211; again, flanked by goblins &#8211; is a vast marble hall with, by Harry&#8217;s estimation, a hundred or more goblins sitting at counters. Leading off the hall are &#8220;too many doors to count,&#8221; and it is through at least one (and probably more) of these that customers access the vaults. (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</p>
+<h2><span id="the_gringotts_vaults">The Gringotts Vaults</span></h2>
+<p>In contrast to the grand marble of the entryway and the main hall, the passageways to the vaults are stone and dimly lit with flaming torches. They slope down to a track, upon which run little carts controlled by the goblins (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>). These carts take visitors deep beneath the surface of the earth, through a &#8220;maze of twisting passages,&#8221; to the vaults. The carts only go one speed &#8211; fast &#8211; which makes Hagrid a little queasy and prevents its occupants from getting a good look at their surroundings (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>), and seem to run on a vast, complex, interconnected series of tracks that allow them to move to and between any vaults (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>, <a href="/source/the-harry-potter-novels/cs/cs4">CS4</a>).</p>
+<p>The vaults themselves vary in size and security. The largest, most well protected vaults belong to the oldest wizarding families and lie deepest beneath the surface (<a href="/source/the-harry-potter-novels/dh/dh25">DH25</a>). Those vaults closer to the surface seem to be smaller and have fewer security precautions surrounding them &#8211; they use keys, for example, rather than requiring the touch of a goblin to gain access. We know of several vaults specifically:</p>
+<ul>
+<li>The Weasleys&#8217; vault, which is likely closer to the surface than Harry&#8217;s. When Harry visits, the vault contains only a small pile of Sickles and a single Galleon, and Mrs. Weasley cleans it out completely (<a href="/source/the-harry-potter-novels/cs/cs4">CS4</a>).</li>
+<li>Harry&#8217;s vault, which requires a key for entry and seems to be of moderate depth &#8211; the cart travels for a while to get there, but it&#8217;s not as far down as vault 713, where the Philosopher&#8217;s Stone was held (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</li>
+<li>Vault 713, which stored only the Philosopher&#8217;s Stone when Harry visited with Hagrid. The vault was very deep and required a goblin to stroke the door with his finger in order to gain entry (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</li>
+<li>Vault 711, belonging to Sirius Black, from which he pays for Harry&#8217;s Firebolt. The fact that it is numbered so closely to 713 &#8211; coupled with the fact that the Blacks are indeed an old wizarding family &#8211; suggests that it too is a high-security vault (<a href="/source/the-harry-potter-novels/pa/pa22">PA22</a>). It contained a &#8220;reasonable amount of gold&#8221; (<a href="/source/the-harry-potter-novels/hbp/hbp3">HBP3</a>).</li>
+<li>The Lestrange family vault, with even higher security than vault 713 &#8211; a dragon guards its entrance and rather than just a finger, a goblin must place his entire palm to the door to open it. The vault is filled with gold, armor, skins, and potions &#8211; and most importantly, Hufflepuff&#8217;s cup, which Harry steals (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>Travers has a vault that requires a key, because he&#8217;s holding it when he runs into Hermione (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+</ul>
+<p>The rules around who is allowed to access vaults seem odd. We&#8217;ve seen wizards asked for identification (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>) or a key (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>) to be allowed access, yet both Molly (<a href="/source/the-harry-potter-novels/gf/gf10">GF10</a>) and Bill (<a href="/source/the-harry-potter-novels/hbp/hbp6">HBP6</a>) are able to get gold from Harry&#8217;s vault for him. Perhaps there is a charm forcing the wizard to give the gold to its rightful owner. However, even this wouldn&#8217;t explain how Sirius was able to send Crookshanks to order a Firebolt in Harry&#8217;s name, but take the gold from his own vault &#8211; despite being an escaped convict at the time (<a href="/source/the-harry-potter-novels/pa/pa22">PA22</a>).</p>
+<p>It also seems that only blood relations can inherit a Gringotts vault; Dumbledore implies strongly that when Sirius died as the last of the Black family line, his vault was cleaned out and its contents added to Harry&#8217;s, rather than Harry inheriting the vault as well (<a href="/source/the-harry-potter-novels/hbp/hbp3">HBP3</a>).</p>
+<h2><span id="security">Security</span></h2>
+<p>From the time he first learns of Gringotts, Harry hears too the rumor that dragons guard the bank&#8217;s high-security vaults (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>) &#8211; a rumor he later confirms himself (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>). However, there are many other security measures on Gringotts vaults as well. Those we know of include:</p>
+<ul>
+<li>Goblins flank the entrance to every door (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>, <a href="/source/the-harry-potter-novels/cs/cs4">CS4</a>, <a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>The vaults are &#8220;hundreds of miles underground&#8221; in a maze of twisting tunnels and caverns (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</li>
+<li>The Gringotts carts can only be controlled by goblins (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>) and move so rapidly the passengers do not have time to see their surroundings (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</li>
+<li>Keys are required for lower-security vaults; for higher-security vaults a goblin must touch the door to allow access. If anyone else tried this, &#8220;they&#8217;d be sucked in the door and trapped in there&#8221; (<a href="/source/the-harry-potter-novels/ps/ps5">PS5</a>).</li>
+<li>When thieves break in, The Thief&#8217;s Downfall is activated &#8211; a waterfall that washes away all enchantments and magical concealments, and the carts throw themselves off the tracks (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>The dragons guarding the high-security vaults can be controlled only by Clankers, which only the goblins have (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>Some vaults have Gemino and Flagrante Curses added to them, meaning that everything a thief touches will burn them and multiply, eventually scalding and crushing them to death (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>A letter of complaint to the Daily Prophet, speaks of a recent change where Gringotts has started employing sphinxes to guard the High Security vaults (DP1)</li>
+<li>Objects within Gringotts vaults cannot be summoned (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+</ul>
+<p>During the Second Wizarding War, the ministry forced additional security precautions to be taken:</p>
+<ul>
+<li>Wizards with Probity Probes replaced the goblins outside the front door, and in the case of Arkie Philpott, a probe was stuck up his&#8230; well, never mind (<a href="/source/the-harry-potter-novels/hbp/hbp6">HBP6</a>, <a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>Warnings were sent to the Gringotts goblins, informing them of wizards who might try to break into specific vaults, wands that have been stolen, etc. (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</li>
+<li>A number of other unknown precautions mean that it takes about five hours for the public to access their vaults, according to Bill Weasley (<a href="/source/the-harry-potter-novels/hbp/hbp6">HBP6</a>).</li>
+</ul>
+<h2><span id="break-ins">Break-ins</span></h2>
+<p>We only know of two Gringotts break-ins, though it&#8217;s likely there have been more throughout history, although the Goblins deny it (<a href="/source/the-harry-potter-novels/dh/dh23">DH23</a>). The first happened on July 31, 1991, when Quirinius Quirrell &#8211; ordered to do so by Voldemort &#8211; broke into vault 713 in search of the Philosopher&#8217;s Stone. However, nothing was stolen, as Hagrid had emptied the vault earlier that same day (<a href="/source/the-harry-potter-novels/ps/ps8">PS8</a>, <a href="/source/the-harry-potter-novels/ps/ps17">PS17</a>).</p>
+<p>The second break-in was much more successful, and happened in May 1998. Hermione used Polyjuice Potion to disguise herself as Bellatrix Lestrange, and despite immediately arousing goblin suspicions, she, Harry, Ron, and Griphook used an invisibility cloak, Confundus Charms, Imperius Curses, and Stunners to great effect, stealing Hufflepuff&#8217;s cup from the Lestrange vault and escaping on the back of a dragon, leaving the bank in ruins (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>).</p>
+<h2><span id="jobs_at_gringotts">Jobs at Gringotts</span></h2>
+<p>There seem to be a number of jobs available at Gringotts for wizards, in addition to those positions held by goblins, though they are largely behind-the-scenes. Bill Weasley took a job as a Curse-Breaker (or Charm-Breaker, <a href="/source/the-harry-potter-novels/gf/gf10">GF10</a>), hunting treasure in Egypt after his graduation from Hogwarts (<a href="/source/the-harry-potter-novels/pa/pa1">PA1</a>) . The job was described in a pamphlet available to Hogwarts students:</p>
+<blockquote><p>&#8220;Are you seeking a challenging career involving travel, adventure, and substantial, danger-related treasure bonuses? Then consider a position with Gringotts Wizarding Bank, who are currently recruiting Curse-Breakers for thrilling opportunities abroad&#8221; (<a href="/source/the-harry-potter-novels/op/op29">OP29</a>).</p></blockquote>
+<p>When he wanted to do work for the Order of the Phoenix, Bill transferred to a desk job in England to be near home (<a href="/source/the-harry-potter-novels/op/op4">OP4</a>). That same year, Fleur Delacour took a job at Gringotts as well, to improve her English (<a href="/source/the-harry-potter-novels/op/op4">OP4</a>), though she only works part-time (<a href="/source/the-harry-potter-novels/hbp/hbp5">HBP5</a>). There also seems to be a full-time security force that is comprised of wizards, and that rushes to the scene when the Lestranges vault is broken into (<a href="/source/the-harry-potter-novels/dh/dh26">DH26</a>). They also employ Dragon Feeders, a job with a high mortality rate, at 7 Galleons per week (DP2).</p>
+<div id="toc_container" class="no_bullets"><ul class="toc_list"><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+
+				        					    </div>
+				    <div class="col-md-4">
+																            <div class="lexicon_toc">
+				                <div class="lexicon_toc_heading">
+									<strong>Table of Contents</strong>
+								</div>
+				                <ul class="toc">
+				                    <li></li><li></li><li></li><li></li><li></li><li></li>
+				                </ul>
+				            </div>
+				        				        
+				        				        <div class="related_container">
+							<div class="related_container_heading">
+								<strong>Related Entries</strong>
+							</div>
+							<div class="panel-group" id="relatedAccordion" role="tablist" aria-multiselectable="true">
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedCharactersHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedCharactersContent" aria-expanded="false" aria-controls="relatedCharactersContent">
+                Characters
+            </a>
+        </span>
+    </div>
+    <div id="relatedCharactersContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedCharactersHeading">
+        <div class="panel-body">
+                            <div class="relatedlink-container relatedlink-characters" id="relatedlink-container-characters-2222"><a class="relatedlink related-characters" href="https://www.hp-lexicon.org/character/gringott/">Gringott</a></div>
+                            <div class="relatedlink-container relatedlink-characters" id="relatedlink-container-characters-2589"><a class="relatedlink related-characters" href="https://www.hp-lexicon.org/character/griphook/">Griphook</a></div>
+                    </div>
+    </div>
+</div>
+				                
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedLocationsHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedLocationsContent" aria-expanded="false" aria-controls="relatedLocationsContent">
+                Locations
+            </a>
+        </span>
+    </div>
+    <div id="relatedLocationsContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedLocationsHeading">
+        <div class="panel-body">
+                            <div class="relatedlink-container relatedlink-locations" id="relatedlink-container-locations-2512"><a class="relatedlink related-locations" href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/">Diagon Alley</a></div>
+                            <div class="relatedlink-container relatedlink-locations" id="relatedlink-container-locations-2506"><a class="relatedlink related-locations" href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/">London</a></div>
+                    </div>
+    </div>
+</div>
+				                
+				                
+				                
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedEventsHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedEventsContent" aria-expanded="false" aria-controls="relatedEventsContent">
+                Events
+            </a>
+        </span>
+    </div>
+    <div id="relatedEventsContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedEventsHeading">
+        <div class="panel-body">
+                            <a id="related-events-4099" class="related-events" href="https://www.hp-lexicon.org/event/july-31-1991-quirrell-attempts-to-steal-the/">Quirrell attempts to steal the Philosopher&#8217;s Stone from Gringotts</a><br />
+                            <a id="related-events-1736" class="related-events" href="https://www.hp-lexicon.org/event/harrys-first-visit-to-diagon-alley/">Harry&#8217;s first visit to Diagon Alley</a><br />
+                            <a id="related-events-4059" class="related-events" href="https://www.hp-lexicon.org/event/1850-goblin-rights-pioneer-oswald-beamish-is-born/">Goblin rights pioneer Oswald Beamish is born</a><br />
+                            <a id="related-events-3814" class="related-events" href="https://www.hp-lexicon.org/event/1935-goblin-rights-pioneer-oswald-beamish-dies/">Goblin rights pioneer Oswald Beamish dies</a><br />
+                            <a id="related-events-12987" class="related-events" href="https://www.hp-lexicon.org/event/harry-and-hagrid-visit-gringotts/">Harry and Hagrid visit Gringotts</a><br />
+                            <a id="related-events-2220" class="related-events" href="https://www.hp-lexicon.org/event/gringotts-bank-is-founded/">Gringotts Bank is founded</a><br />
+                            <a id="related-events-4275" class="related-events" href="https://www.hp-lexicon.org/event/circa-december-20-1992-mr-and-mrs-weasley-visit/">Mr and Mrs Weasley visit Bill in Egypt</a><br />
+                            <a id="related-events-7104" class="related-events" href="https://www.hp-lexicon.org/event/the-great-gringotts-robbery/">The Great Gringotts Robbery</a><br />
+                            <a id="related-events-37069" class="related-events" href="https://www.hp-lexicon.org/event/the-trio-recover-hufflepuffs-cup-a-horcrux-from-the-lestrange-family-vault/">The Trio recover Hufflepuff&#8217;s Cup, a Horcrux, from the Lestrange Family Vault</a><br />
+                            <a id="related-events-35344" class="related-events" href="https://www.hp-lexicon.org/event/goblins-given-full-control-gringotts/">Goblins are given full control of Gringotts</a><br />
+                    </div>
+    </div>
+</div>
+				                
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedThingsHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedThingsContent" aria-expanded="false" aria-controls="relatedThingsContent">
+                Things
+            </a>
+        </span>
+    </div>
+    <div id="relatedThingsContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedThingsHeading">
+        <div class="panel-body">
+                            <div class="relatedlink-container relatedlink-things" id="relatedlink-container-things-8793"><a class="relatedlink related-things" href="https://www.hp-lexicon.org/thing/galleons/">Galleons</a></div>
+                            <div class="relatedlink-container relatedlink-things" id="relatedlink-container-things-8795"><a class="relatedlink related-things" href="https://www.hp-lexicon.org/thing/money/">Money</a></div>
+                            <div class="relatedlink-container relatedlink-things" id="relatedlink-container-things-26588"><a class="relatedlink related-things" href="https://www.hp-lexicon.org/thing/dragot/">Dragot</a></div>
+                            <div class="relatedlink-container relatedlink-things" id="relatedlink-container-things-27551"><a class="relatedlink related-things" href="https://www.hp-lexicon.org/thing/keeper-treasure-dragots/">Keeper of Treasure and Dragots</a></div>
+                            <div class="relatedlink-container relatedlink-things" id="relatedlink-container-things-24727"><a class="relatedlink related-things" href="https://www.hp-lexicon.org/thing/currency-wizarding-world/">Currency in the Wizarding World</a></div>
+                    </div>
+    </div>
+</div>
+				                
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedCreaturesHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedCreaturesContent" aria-expanded="false" aria-controls="relatedCreaturesContent">
+                Creatures
+            </a>
+        </span>
+    </div>
+    <div id="relatedCreaturesContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedCreaturesHeading">
+        <div class="panel-body">
+                            <div class="relatedlink-container relatedlink-creatures" id="relatedlink-container-creatures-6590"><a class="relatedlink related-creatures" href="https://www.hp-lexicon.org/creature/reptiles-and-amphibians/dragon/">Dragons</a></div>
+                    </div>
+    </div>
+</div>
+				                
+				                				                    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relatedEssaysHeading">
+        <span class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#relatedAccordion" href="#relatedEssaysContent" aria-expanded="false" aria-controls="relatedEssaysContent">
+                Essays
+            </a>
+        </span>
+    </div>
+    <div id="relatedEssaysContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relatedEssaysHeading">
+        <div class="panel-body">
+                            <div class="relatedlink-container relatedlink-essays" id="relatedlink-container-essays-7643"><a class="relatedlink related-essays" href="https://www.hp-lexicon.org/2007/02/04/wizard-money/">Wizard Money</a></div>
+                            <div class="relatedlink-container relatedlink-essays" id="relatedlink-container-essays-34313"><a class="relatedlink related-essays" href="https://www.hp-lexicon.org/2018/03/26/it-is-our-choices/">It Is Our Choices</a></div>
+                    </div>
+    </div>
+</div>
+				                				            </div>
+				        </div>
+				        
+				    </div>
+				</div>
+
+									
+					<h2>Commentary</h2>
+					<div class="editorial opinion">
+						
+						
+						
+													<div class="editorial_notes">
+								<h3>Notes</h3>
+								
+								<p><a href="https://www.hp-lexicon.org/search-wpsolr/?wpsolr_q=gringotts&amp;wpsolr_fq%5B0%5D=type:attachment" target="_blank" rel="noopener">Related images</a></p>
+<p><a href="https://www.hp-lexicon.org/source/other-canon/jkr/jkr-com-bboard/bbcshow-gringotts/" target="_blank" rel="noopener"><img class="alignnone wp-image-34828 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2017/11/BBCshow-gringotts-150x150.jpg" alt="" width="150" height="150" /></a> <a href="https://www.hp-lexicon.org/?attachment_id=32732" target="_blank" rel="noopener"><img class="alignnone wp-image-32732 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2017/09/gringotts_by_scribblerian-dbk2rzy-150x150.png" alt="" width="150" height="150" /></a> <a href="https://www.hp-lexicon.org/?attachment_id=23130" target="_blank" rel="noopener"><img class="alignnone wp-image-23130 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2016/06/gringotts_sketch_by_bakke-150x150.jpg" alt="" width="150" height="150" /></a> <a href="https://www.hp-lexicon.org/?attachment_id=36246" target="_blank" rel="noopener"><img class="alignnone wp-image-36246 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2016/07/gringotts_goblins-detail3_by_sandyledandy-d3kognt-150x150.jpg" alt="" width="150" height="150" /></a> <a href="https://www.hp-lexicon.org/?attachment_id=36245" target="_blank" rel="noopener"><img class="alignnone wp-image-36245 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2016/07/gringotts_goblins-detail2_by_sandyledandy-d3kognt-150x150.jpg" alt="" width="150" height="150" /></a> <a href="https://www.hp-lexicon.org/?attachment_id=36244" target="_blank" rel="noopener"><img class="alignnone wp-image-36244 size-thumbnail" src="https://www.hp-lexicon.org/wp-content/uploads/2016/07/gringotts_goblins-detail4_by_sandyledandy-d3kognt-150x150.jpg" alt="" width="150" height="150" /></a></p>
+
+															</div>
+						
+						<div class="from_the_web"><h3>From the Web</h3><p><a href="https://wemyss.livejournal.com/182444.html" target="_blank" rel="noopener">Gnomes are from Zurich, Goblins are from Vienna: Gringotts and the Wizarding economy</a> by <a href="https://wemyss.livejournal.com/" target="_self">wemyss</a></p>
+<p>"<a href="https://arxiv.org/pdf/1703.10469.pdf" target="_blank" rel="noopener">Harry Potter and the Goblin Bank of Gringotts</a>" by <a href="https://arxiv.org/abs/1703.10469" target="_blank" rel="noopener">Zachary Feinstein</a> (<a href="https://arxiv.org/abs/1703.10469">arXiv:1703.10469</a> [q-fin.GN])</p>
+</div>
+						                            <!-- Ezoic - before-pensieve - long_content -->
+                            <div id="ezoic-pub-ad-placeholder-111"> </div>
+                            <!-- End Ezoic - before-pensieve - long_content -->
+
+							<h3>Pensieve <small>(Comments)</small></h3>
+							<section class="comments content panel-group" id="comments_block" role="tablist" aria-multiselectable="false">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="commentHeading">
+										<div class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="comments_block" href="#commentContent" aria-expanded="false" aria-controls="commentContent">
+												View 0 thoughts swirling around the pensieve.  Add your own.</a>
+										</div>
+									</div>
+									<div id="commentContent" class="panel-collapse collapse" role="tabpanel" aria-labeledby="commentHeading">
+										<div class="panel-body">
+											
+<div id="disqus_thread"></div>
+<script>
+    var embedVars = {"disqusConfig":{"integration":"wordpress 3.1.3 6.8.3"},"disqusIdentifier":"2534 http:\/\/beta.hp-lexicon.org\/?post_type=place&#038;p=2534","disqusShortname":"hplexicon","disqusTitle":"Gringotts Wizarding Bank","disqusUrl":"https:\/\/www.hp-lexicon.org\/place\/great-britain-united-kingdom\/england\/london\/diagon-alley\/gringotts-wizarding-bank\/","postId":2534};
+    var disqus_url = embedVars.disqusUrl;
+var disqus_identifier = embedVars.disqusIdentifier;
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = embedVars.disqusShortname;
+var disqus_title = embedVars.disqusTitle;
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    var dsqConfig = embedVars.disqusConfig;
+    this.page.integration = dsqConfig.integration;
+    this.page.remote_auth_s3 = dsqConfig.remote_auth_s3;
+    this.page.api_key = dsqConfig.api_key;
+    this.sso = dsqConfig.sso;
+    this.language = dsqConfig.language;
+
+    if (disqus_config_custom)
+        disqus_config_custom.call(this);
+};
+
+(function() {
+    // Adds the disqus_thread id to the comment section if site is using a WP block theme
+    var commentsBlock = document.querySelector('.wp-block-comments');
+    if (commentsBlock) {
+        commentsBlock.id = 'disqus_thread';
+    }
+    if (document.getElementById(disqus_container_id)) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    } else {
+        console.error("Could not find 'disqus_thread' container to load DISQUS.  This is usually the result of a WordPress theme conflicting with the DISQUS plugin.  Try switching your site to a Classic Theme, or contact DISQUS support for help.");
+    }
+})();
+</script>
+
+										</div>
+									</div>
+								</div>
+							</section>
+						
+					</div>
+									
+															<p class="keywords">
+							Tags:
+															<a href="https://www.hp-lexicon.org/tag/diagon-alley-businesses/">Diagon Alley businesses</a>
+															<a href="https://www.hp-lexicon.org/tag/doors/">doors</a>
+															<a href="https://www.hp-lexicon.org/tag/first-meeting/">first meeting</a>
+															<a href="https://www.hp-lexicon.org/tag/gold/">gold</a>
+															<a href="https://www.hp-lexicon.org/tag/marble/">marble</a>
+															<a href="https://www.hp-lexicon.org/tag/money/">money</a>
+															<a href="https://www.hp-lexicon.org/tag/protection/">protection</a>
+															<a href="https://www.hp-lexicon.org/tag/safety/">safety</a>
+															<a href="https://www.hp-lexicon.org/tag/security/">security</a>
+															<a href="https://www.hp-lexicon.org/tag/tunnel/">tunnel</a>
+													</p>
+									
+								<p class="blog-author">
+					<span>Editor:</span> <span itemprop="author" itemtype="http://schema.org/Person" itemscope><a itemprop="url" href="https://www.hp-lexicon.org/author/steve-vanderark/"><span itemprop="name">Steve VanderArk</span></a></span>
+					<time itemprop="datePublished" datetime="2014-06-28T21:49:56+00:00"></time>
+					<time itemprop="dateModified" datetime="2021-08-15T20:21:55+00:00"></time>
+				</p>
+							</div>
+		</section>
+
+
+				
+							</div>
+		</div>
+			</section>
+
+
+
+            <div class="rel_creatures">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"><span class="title"><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/" title="Diagon Alley"><i class="fa fa-map icon-bullet"></i> Diagon Alley</a></span></div>
+                                    <div class="col-md-3">
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/129b-diagon-alley-london/" title="129B Diagon Alley, London" >129B Diagon Alley, London</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/18a-diagon-alley/" title="18a Diagon Alley" >18a Diagon Alley</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/apothecary/" title="Apothecary" >Apothecary</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/carkitt-market/" title="Carkitt Market" >Carkitt Market</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/daily-prophet-offices/" title="Daily Prophet Offices" >Daily Prophet Offices</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/diagon-alley-cafes/" title="Diagon Alley cafes" >Diagon Alley cafes</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/diagon-alley-street-peddlers/" title="Diagon Alley street peddlers" >Diagon Alley street peddlers</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/eeylops-owl-emporium/" title="Eeylops Owl Emporium" >Eeylops Owl Emporium</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/florean-fortescues-ice-cream-parlor/" title="Florean Fortescue&#8217;s Ice Cream Parlor" >Florean Fortescue&#8217;s Ice Cream Parlor</a>
+                                            </div>
+                                    <div class="col-md-3">
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/flourish-and-blotts/" title="Flourish and Blotts" >Flourish and Blotts</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gambol-and-japes-wizarding-joke-shop/" title="Gambol and Japes Wizarding Joke Shop" >Gambol and Japes Wizarding Joke Shop</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/" title="Gringotts Wizarding Bank" class="current">Gringotts Wizarding Bank</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/horizont-alley/" title="Horizont Alley" >Horizont Alley</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/junk-shop/" title="Junk shop" >Junk shop</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/knockturn-alley/" title="Knockturn Alley" >Knockturn Alley</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/madam-malkins-robes-for-all-occasions/" title="Madam Malkin&#8217;s Robes for All Occasions" >Madam Malkin&#8217;s Robes for All Occasions</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/madam-primpernelles-beautifying-potions/" title="Madam Primpernelle&#8217;s Beautifying Potions" >Madam Primpernelle&#8217;s Beautifying Potions</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/magical-menagerie/" title="Magical Menagerie" >Magical Menagerie</a>
+                                            </div>
+                                    <div class="col-md-3">
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/mnemosyne-clinic-for-memory-modification/" title="Mnemosyne Clinic for Memory Modification" >Mnemosyne Clinic for Memory Modification</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/ollivanders/" title="Ollivander&#8217;s" >Ollivander&#8217;s</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/quality-quidditch-supplies/" title="Quality Quidditch Supplies" >Quality Quidditch Supplies</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/second-hand-robe-shop/" title="second-hand robe shop" >second-hand robe shop</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/splinter-and-kreeks/" title="Splinter and Kreek&#8217;s" >Splinter and Kreek&#8217;s</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/terrortours/" title="Terrortours" >Terrortours</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/twilfitt-tattings/" title="Twilfitt and Tatting&#8217;s" >Twilfitt and Tatting&#8217;s</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/weasleys-wizard-wheezes/" title="Weasleys&#8217; Wizard Wheezes" >Weasleys&#8217; Wizard Wheezes</a>
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/whizzhard-books/" title="Whizz Hard Books" >Whizz Hard Books</a>
+                                            </div>
+                                </div>
+            </div>
+        </div>
+    
+            <div class="rel_creatures rel_places_in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"><span class="title"><a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/" title="Gringotts Wizarding Bank"><i class="fa fa-map-marker icon-bullet"></i> Gringotts Wizarding Bank</a></span></div>
+                                    <div class="col-md-3">
+                                                <a href="https://www.hp-lexicon.org/place/great-britain-united-kingdom/england/london/diagon-alley/gringotts-wizarding-bank/gringotts-vaults/" title="Gringotts vaults" >Gringotts vaults</a>
+                                            </div>
+                                </div>
+            </div>
+        </div>
+    
+			<div class="timeline">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 title-column"><span class="title"><i class="fa fa-calendar icon-bullet"></i> Timeline</span></div>
+            <div class="col-md-10">
+                <ul>
+                                    <li class="related" id="timeline-2220" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/gringotts-bank-is-founded/" itemprop="url">
+                                                            <time itemprop="date" datetime="1474">1474</time>:
+                                                        <span itemprop="name">
+                                                                    Gringotts Bank is founded
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-4059" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/1850-goblin-rights-pioneer-oswald-beamish-is-born/" itemprop="url">
+                                                            <time itemprop="date" datetime="1850">1850</time>:
+                                                        <span itemprop="name">
+                                                                    Oswald Beamish is born
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-35344" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/goblins-given-full-control-gringotts/" itemprop="url">
+                                                            <time itemprop="date" datetime="1865">1865</time>:
+                                                        <span itemprop="name">
+                                                                    Goblins are given full control of Gringotts
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-3814" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/1935-goblin-rights-pioneer-oswald-beamish-dies/" itemprop="url">
+                                                            <time itemprop="date" datetime="1935">1935</time>:
+                                                        <span itemprop="name">
+                                                                    Oswald Beamish dies
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-1736" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/harrys-first-visit-to-diagon-alley/" itemprop="url">
+                                                            <time itemprop="date" datetime="1991-07-31">July 31st,  1991</time>:
+                                                        <span itemprop="name">
+                                                                    Harry's first visit to Diagon Alley
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-12987" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/harry-and-hagrid-visit-gringotts/" itemprop="url">
+                                                            <time itemprop="date" datetime="1991-07-31">July 31st,  1991</time>:
+                                                        <span itemprop="name">
+                                                                    Harry and Hagrid visit Gringotts
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-4099" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/july-31-1991-quirrell-attempts-to-steal-the/" itemprop="url">
+                                                            <time itemprop="date" datetime="1991-07-31">July 31st,  1991</time>:
+                                                        <span itemprop="name">
+                                                                    Failed attempt to steal the Philosopher's Stone
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-4275" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/circa-december-20-1992-mr-and-mrs-weasley-visit/" itemprop="url">
+                                                            <time itemprop="date" datetime="1992-12-20">December 20th,  1992</time>:
+                                                        <span itemprop="name">
+                                                                    Mr and Mrs Weasley visit Bill in Egypt
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-7104" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/the-great-gringotts-robbery/" itemprop="url">
+                                                            <time itemprop="date" datetime="1998-05-01">May 1st,  1998</time>:
+                                                        <span itemprop="name">
+                                                                    The Great Gringotts Robbery
+                                                            </span>
+                        </a>
+                    </li>
+                                    <li class="related" id="timeline-37069" itemtype="http://historical-data.org/HistoricalRecord.html" itemscope>
+                        <a href="https://www.hp-lexicon.org/event/the-trio-recover-hufflepuffs-cup-a-horcrux-from-the-lestrange-family-vault/" itemprop="url">
+                                                            <time itemprop="date" datetime="1998-05-01">May 1st,  1998</time>:
+                                                        <span itemprop="name">
+                                                                    The Trio recover Hufflepuff's Cup, a Horcrux, from the Lestrange Family Vault
+                                                            </span>
+                        </a>
+                    </li>
+                                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="sources">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 title-column"><span class="title"><i class="fa fa-eye icon-bullet"></i> Sources</span></div>
+                        <div class="col-md-3">
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/" class="main" title="Harry Potter and the Philosopher's Stone"><i class="fa fa-book icon-bullet"></i>Philosopher's Stone</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps5/" class="sub" title="Diagon Alley">Chapter 5</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps6/" class="sub" title="The Journey from Platform Nine and Three-Quarters">Chapter 6</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps8/" class="sub" title="The Potions Master">Chapter 8</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps10/" class="sub" title="Hallowe'en">Chapter 10</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps16/" class="sub" title="Through the Trapdoor">Chapter 16</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/ps/ps17/" class="sub" title="The Man with Two Faces">Chapter 17</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/cs/" class="main" title="Harry Potter and the Chamber of Secrets"><i class="fa fa-book icon-bullet"></i>Chamber of Secrets</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/cs/cs4/" class="sub" title="At Flourish and Blotts">Chapter 4</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/cs/cs13/" class="sub" title="The Very Secret Diary">Chapter 13</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/pa/" class="main" title="Harry Potter and the Prisoner of Azkaban"><i class="fa fa-book icon-bullet"></i>Prisoner of Azkaban</a>
+
+                            </div>
+                        <div class="col-md-3">
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/pa/pa3/" class="sub" title="The Knight Bus">Chapter 3</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/pa/pa4/" class="sub" title="The Leaky Cauldron">Chapter 4</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/pa/pa22/" class="sub" title="Owl Post Again">Chapter 22</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/gf/" class="main" title="Harry Potter and the Goblet of Fire"><i class="fa fa-book icon-bullet"></i>Goblet of Fire</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/gf/gf10/" class="sub" title="Mayhem at the Ministry">Chapter 10</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/op/" class="main" title="Harry Potter and the Order of the Phoenix"><i class="fa fa-book icon-bullet"></i>Order of the Phoenix</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/op/op4/" class="sub" title="Number Twelve,  Grimmauld Place">Chapter 4</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/op/op10/" class="sub" title="Luna Lovegood">Chapter 10</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/op/op29/" class="sub" title="Career Advice">Chapter 29</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/hbp/" class="main" title="Harry Potter and the Half-Blood Prince"><i class="fa fa-book icon-bullet"></i>Half-Blood Prince</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/hbp/hbp3/" class="sub" title="Will and Won't">Chapter 3</a>
+
+                            </div>
+                        <div class="col-md-3">
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/hbp/hbp4/" class="sub" title="Horace Slughorn">Chapter 4</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/hbp/hbp5/" class="sub" title="An Excess of Phlegm">Chapter 5</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/the-harry-potter-novels/dh/" class="main" title="Harry Potter and the Deathly Hallows"><i class="fa fa-book icon-bullet"></i>Deathly Hallows</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/dp/" class="main" title="Daily Prophet newsletters"><i class="fa fa-newspaper-o icon-bullet"></i>Daily Prophet newsletters</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/dp/dp1/" class="sub" title="Daily Prophet newsletter 1"><i class="fa fa-newspaper-o icon-bullet"></i>Issue 1</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/dp/dp2/" class="sub" title="Daily Prophet newsletter 2"><i class="fa fa-newspaper-o icon-bullet"></i>Issue 2</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/jkr/jkr-w1/" class="main" title="WOMBAT Test 1"><i class="fa fa-globe icon-bullet"></i>WOMBAT Test 1</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/jkr/jkr-w2/" class="main" title="WOMBAT Test 2"><i class="fa fa-globe icon-bullet"></i>WOMBAT Test 2</a>
+
+                                    <a href="https://www.hp-lexicon.org/source/other-canon/jkr/jkr-w3/" class="main" title="WOMBAT Test 3"><i class="fa fa-globe icon-bullet"></i>WOMBAT Test 3</a>
+
+                            </div>
+                    </div>
+    </div>
+</div>
+	</article>
+
+	<footer id="footer" class="footer">
+		<div class="container">
+		    <div class="row">
+		        <div class="col-md-10">
+		            <a class="navbar-brand" href="https://www.hp-lexicon.org">&copy; 2000 &ndash; 2025 The <em>Harry Potter</em> Lexicon</a>
+		            <p class="small">The Harry Potter Lexicon is an unofficial Harry Potter fansite. HARRY POTTER, characters, names, and all related indicia are trademarks of Warner Bros. &copy; 2001 &ndash; 2025.</p>
+		            
+		            		        </div>
+		    </div>
+
+		</div>
+
+	</footer>
+    <div class="row">
+        <!-- Ezoic - footer-bar-ad - bottom_of_page -->
+        <div id="ezoic-pub-ad-placeholder-115"> </div>
+        <!-- End Ezoic - footer-bar-ad - bottom_of_page -->
+    </div>
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/lexicon\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.3" id="jquery-ui-tooltip-js"></script>
+<script type="text/javascript" id="disqus_count-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"hplexicon"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.1.3" id="disqus_count-js"></script>
+<script type="text/javascript" src="https://www.hp-lexicon.org/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2411.1" id="toc-front-js"></script>
+<script defer type="text/javascript" src="https://stats.wp.com/e-202552.js" id="jetpack-stats-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-after">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'115614614',post:'2534',tz:'0',srv:'www.hp-lexicon.org',j:'1:12.9.4'} ]);
+_stq.push([ "clickTrackerInit", "115614614", "2534" ]);
+/* ]]> */
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://www.hp-lexicon.org/wp-content/themes/lexicon/js/jquery.tipsy.min.js"></script>
+<script src="https://www.hp-lexicon.org/wp-content/themes/lexicon/js/sweetalert.min.js"></script>
+<script src="https://www.hp-lexicon.org/wp-content/themes/lexicon/js/perfect-scrollbar.jquery.min.js"></script>
+
+<script src="https://www.hp-lexicon.org/wp-content/themes/lexicon/js/scripts.js?v=2751dab"></script>
+
+<script data-ad-client="ca-pub-6377434746425502" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: www.hp-lexicon.org @ 2025-12-22 19:31:55 by W3 Total Cache
+-->

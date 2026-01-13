@@ -1,0 +1,27 @@
+
+@startuml
+title Daily KB Update (Simple)
+
+actor cron as "cron (06:00)"
+component "update_all.sh" as sh
+component "chunk_documents_langchain.py" as c
+component "embed_chunks.py" as e
+component "build_faiss_index.py" as f
+file "chunks.json" as chunks
+file "faiss.index" as idx
+file "logs/update.log" as log
+file "embeddings.npy" as embd
+
+
+cron --> sh
+sh --> c
+c --> chunks
+sh --> e
+e --> chunks
+e --> embd
+sh --> f
+f --> idx
+f --> embd
+sh --> log
+
+@enduml

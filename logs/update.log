@@ -1,0 +1,36 @@
+[2026-01-06T13:47:06Z] START update
+[2026-01-06T13:47:06Z] 1) chunk_documents_langchain.py
+Done.
+Documents processed: 40
+Total chunks: 490
+Saved to: /home/va/projects/sprint7/RAG/knowledge_base/chunks.json
+[2026-01-06T13:47:11Z] 2) embed_chunks.py
+Batches:   0%|          | 0/8 [00:00<?, ?it/s]Batches:  12%|█▎        | 1/8 [00:02<00:20,  2.96s/it]Batches:  25%|██▌       | 2/8 [00:05<00:17,  2.90s/it]Batches:  38%|███▊      | 3/8 [00:08<00:14,  2.89s/it]Batches:  50%|█████     | 4/8 [00:11<00:12,  3.00s/it]Batches:  62%|██████▎   | 5/8 [00:14<00:08,  2.99s/it]Batches:  75%|███████▌  | 6/8 [00:17<00:06,  3.02s/it]Batches:  88%|████████▊ | 7/8 [00:20<00:02,  2.76s/it]Batches: 100%|██████████| 8/8 [00:20<00:00,  2.13s/it]Batches: 100%|██████████| 8/8 [00:20<00:00,  2.62s/it]
+Done.
+Embeddings shape: (490, 384)
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/embeddings.npy
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/embeddings_meta.json
+[2026-01-06T13:47:40Z] 3) build_faiss_index.py
+Done.
+Embeddings: 490 x 384
+Index size: 490
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/faiss.index
+[2026-01-06T13:47:40Z] DONE update
+[2026-01-07T03:00:01Z] START update
+[2026-01-07T03:00:01Z] 1) chunk_documents_langchain.py
+Done.
+Documents processed: 40
+Total chunks: 490
+Saved to: /home/va/projects/sprint7/RAG/knowledge_base/chunks.json
+[2026-01-07T03:00:11Z] 2) embed_chunks.py
+Batches:   0%|          | 0/8 [00:00<?, ?it/s]Batches:  12%|█▎        | 1/8 [00:03<00:22,  3.27s/it]Batches:  25%|██▌       | 2/8 [00:06<00:18,  3.01s/it]Batches:  38%|███▊      | 3/8 [00:09<00:14,  2.97s/it]Batches:  50%|█████     | 4/8 [00:11<00:11,  2.96s/it]Batches:  62%|██████▎   | 5/8 [00:14<00:08,  2.87s/it]Batches:  75%|███████▌  | 6/8 [00:17<00:05,  2.87s/it]Batches:  88%|████████▊ | 7/8 [00:19<00:02,  2.61s/it]Batches: 100%|██████████| 8/8 [00:20<00:00,  2.02s/it]Batches: 100%|██████████| 8/8 [00:20<00:00,  2.55s/it]
+Done.
+Embeddings shape: (490, 384)
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/embeddings.npy
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/embeddings_meta.json
+[2026-01-07T03:00:39Z] 3) build_faiss_index.py
+Done.
+Embeddings: 490 x 384
+Index size: 490
+Saved: /home/va/projects/sprint7/RAG/knowledge_base/faiss.index
+[2026-01-07T03:00:40Z] DONE update
